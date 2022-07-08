@@ -18,12 +18,14 @@ public abstract class DrawingActivity extends AppCompatActivity {
     @Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.drawmenu, menu);
-		
+
+		// debug the menu
 		menu.findItem(R.id.bitmap_menu_item).setIntent(new Intent(this, DrawBitmapActivity.class));
 		menu.findItem(R.id.gradient_menu_item).setIntent(new Intent(this, DrawGradientActivity.class));
 		menu.findItem(R.id.shape_menu_item).setIntent(new Intent(this, NewViewActivity.class));
 		menu.findItem(R.id.text_menu_item).setIntent(new Intent(this, DrawTextActivity.class));
-		menu.findItem(R.id.arc_menu_item).setIntent(new Intent(this, ArcShapeActivity.class));
+		//menu.findItem(R.id.arc_menu_item).setIntent(new Intent(this, ArcShapeActivity.class));
+		menu.findItem(R.id.arc_menu_item).setIntent(new Intent(this, ArchShpae2.class));
 		super.onCreateOptionsMenu(menu);
 		return true;
 	}

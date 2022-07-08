@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ArchShpae2"
+            android:exported="false" />
+        <activity
             android:name=".ArcShapeActivity"
             android:exported="false" />
         <activity android:name=".NewViewActivity">
